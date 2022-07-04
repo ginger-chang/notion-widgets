@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>What day is it today?</h1>
+<p id="title" style="font-family: Andale Mono;"></p>
 
 <p id="demo" style="font-family:Andale Mono;"></p>
 
@@ -12,15 +12,20 @@ var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturda
 document.getElementById("demo").innerHTML = days[d.getDay()];
 var day = days[d.getDay()];
 if (day == 'Monday') {
-	document.getElementById("demo").innerHTML = "Monday yolo";
+	document.getElementById("title").innerHTML = "<u>Monday</u>";
+	document.getElementById("demo").innerHTML = "10:00-11:00 MUSIC 20<br>12:00-14:00 UGBA 135";
 } else if (day == 'Tuesday') {
-	document.getElementById("demo").innerHTML = "tue";
+	document.getElementById("title").innerHTML = "<u>Tuesday</u>";
+	document.getElementById("demo").innerHTML = "10:00-11:00 MUSIC 27";
 } else if (day == 'Wednesday') {
-	document.getElementById("demo").innerHTML = "w";
+	document.getElementById("title").innerHTML = "<u>Wednesday</u>";
+	document.getElementById("demo").innerHTML = "10:00-11:00 MUSIC 20";
 } else if (day == 'Thursday') {
-	document.getElementById("demo").innerHTML = "thu";
+	document.getElementById("title").innerHTML = "<u>Thursday</u>";
+	document.getElementById("demo").innerHTML = "10:00-11:00 MUSIC 27<br>16:00-17:00 MUSIC 27";
 } else if (day == 'Friday') {
-	document.getElementById("demo").innerHTML = "frifrifri";
+	document.getElementById("title").innerHTML = "<u>Friday</u>";
+	document.getElementById("demo").innerHTML = "10:00-11:00 MUSIC 20";
 }
 </script>
 </body>
